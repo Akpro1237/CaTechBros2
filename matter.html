@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Start Countdown on Button Click</title>
+</head>
+
+
+
+<style>
+
+
+*
+
+
+.attractive-text {
+            background: linear-gradient(to bottom, #0a0a0a, #0a0a0a); /* Gradient background */
+            color: white; /* Text color */
+            font-weight: bold; /* Bold font */
+            font-size: 24px; /* Font size */
+            padding: 10px; /* Padding around text */
+            border-radius: 10px; /* Rounded corners */
+            text-align: center; /* Center text horizontally */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+        }
+
+
+
+
+.countdown-text {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            animation: fade 1s linear infinite;
+            position: relative;
+            left:520px;
+            top: 300px;
+       
+        }
+
+        /* Keyframes for fade-in and fade-out effect */
+        @keyframes fade {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.4;
+            }
+        }
+
+
+
+.attractive-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #ff5722; /* Change the background color as desired */
+            color: #fff; /* Text color */
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+            left: 615px;
+            top: 400px;
+
+        }
+
+        /* Hover effect */
+        .attractive-button:hover {
+            background-color: #e64a19; /* Change the hover background color */
+            transform: scale(1.05); /* Add a slight zoom effect on hover */
+        }
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+<body>
+    
+    
+    
+      
+    
+    
+    
+    
+    <div id="countdown" class="countdown-text"></div>
+    
+    <div id="message" style="display: none;" class="attractive-text">
+        
+        <p>For IOS: video lite</p>
+        <p>For Android: play tube</p>
+        
+       
+
+
+
+
+        </div>
+        
+
+
+    <button id="startButton" onclick="startCountdown(30)" class="attractive-button">Get App Name</button>
+
+    <script>
+        // Function to start the countdown
+        function startCountdown(seconds) {
+            var countdownElement = document.getElementById("countdown");
+            var messageElement = document.getElementById("message");
+            countdownElement.style.display = "block";
+
+            var interval = setInterval(function() {
+                countdownElement.innerHTML = "Wait For: " + seconds + " seconds";
+                seconds--;
+
+                if (seconds < 0) {
+                    clearInterval(interval); // Stop the countdown
+                    countdownElement.style.display = "none";
+                    messageElement.style.display = "block";
+                    message1Element.style.display = "block";
+                }
+            }, 1000); // Update the countdown every 1000 milliseconds (1 second)
+        }
+    </script>
+
+
+
+
+
+
+
+<div>
+    <!-- Paste your AdSense code here -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="your-ad-client-id"
+         data-ad-slot="your-ad-slot-id"
+         data-ad-format="auto"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+
+
+
+</body>
+</html>
